@@ -1,0 +1,18 @@
+.bad-star {
+    fill: #E0E0E0;
+    margin-right: 1px;
+}
+
+.sprite-star {
+    fill: #E77E42;
+}
+.sprite-basket {
+    stroke: #202454;
+}
+
+.basket--blue {
+    stroke: #3A9EFD;
+}
+.sprite-user{
+    stroke: #202454;
+}
