@@ -1,4 +1,5 @@
-const iconMenu = document.querySelector('.menu-burger__header');
+// <------ Burger START ------>
+const iconMenu = document.querySelector('.burger-header');
 if (iconMenu) {
     const headerMenu = document.querySelector('.header-menu');
     iconMenu.addEventListener("click", function (e) {
@@ -7,6 +8,10 @@ if (iconMenu) {
         headerMenu.classList.toggle('_active');
     });
 }
+// <------ Burger END ------>
+
+
+// <------ Scroll-up START ------>
 const scrollUp = document.querySelector('.scroll-up');
 const scrollUpButton = scrollUp.querySelector('.scroll-up__button');
 
@@ -16,43 +21,46 @@ if (scrollUpButton) {
         window.scrollTo({top: 0, behavior: "smooth"});
     });
 }
+// <------ Scroll-up END ------>
 
-    $('.slider').slick({
-        arrows:true,
-        dots:true,
-        slidesToShow:5,
-        slidesToScroll:2,
-        responsive:[
-            {
-                breakpoint: 1440,
-                settings: {
-                    slidesToShow:4,
-                    slidesToScroll:1
-                }
-            },
-            {
-                breakpoint: 1100,
-                settings: {
-                    dots: false,
-                    slidesToShow:3,
-                    slidesToScroll:1
-                }
-            },
-            {
-                breakpoint: 900,
-                settings: {
-                    dots: false,
-                    slidesToShow:2,
-                    slidesToScroll:1
-                }
-            },
-            {
-                breakpoint: 570,
-                settings: {
-                    slidesToShow:1,
-                    slidesToScroll:1
-                }
+
+// <------ Slider START ------>
+$('.slider').slick({
+    arrows: true,
+    dots: true,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    responsive: [
+        {
+            breakpoint: 1440,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1
             }
-        ]
-    });
-
+        },
+        {
+            breakpoint: 1100,
+            settings: {
+                dots: false,
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                dots: false,
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 570,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
+});
+// <------ Slider END ------>

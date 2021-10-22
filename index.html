@@ -11,50 +11,96 @@
 </head>
 <body>
 <header class="header">
-    <div class="logo">
-        <img src="img/wezom_logo.png" alt="">
-    </div>
-    <div class="menu-burger__header">
-        <span></span>
-    </div>
-    <div class="header-menu">
-        <div class="header-menu__left">
-            <div class="menu__left-item">
-                <span class="left-item__link">Магазины</span>
-                <span class="left-item__link">Блог</span>
-            </div>
-            <nav class="catalog">
-                <a class="item__catalog">Товары по питомцам</a>
-                <a class="item__catalog">Бренды</a>
-                <a class="item__catalog">Ветаптека</a>
-                <a class="item__catalog">Найди друга</a>
-                <a class="item__catalog">Ветклиники</a>
-            </nav>
-
+    <div class="container--header">
+        <div class="burger-header">
+            <span></span>
         </div>
-        <div class="header-menu__right">
-            <div class="lang">
-                <div class="lang__link">УКР</div>
-                <div class="lang__link">РУС</div>
-                <div class="lang__link">ENG</div>
+        <div class="header-menu">
+            <div class="header-menu__top">
+                <div class="header-menu__top__left">
+                    <div class="location">
+                        <svg class="sprite-location" width="12" height="14">
+                            <use xlink:href="icons.svg#sprite-location"></use>
+                        </svg>
+                        <div class="location-name">Херсон</div>
+                    </div>
+                    <div class="menu__top-item">
+                        <div class="top-item__link">Магазины</div>
+                        <div class="top-item__link">Блог</div>
+                        <div class="top-item__link">Покупателям</div>
+                        <svg class="arr__down" width="12" height="14">
+                            <use xlink:href="icons.svg#sprite-arr-down"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header-menu__top__right">
+                    <div class="phones">
+                        <div class="phones-text">Консультация:</div>
+                        <a class="phones-number" href="tel:0444903100">(044) 490 31 00</a>
+                        <svg class="sprite-arr__down" width="12" height="14">
+                            <use xlink:href="icons.svg#sprite-arr-down"></use>
+                        </svg>
+                    </div>
+                    <div class="lang">
+                        <div class="lang__link">УКР</div>
+                        <div class="lang__link">РУС</div>
+                        <div class="lang__link">ENG</div>
+                    </div>
+                </div>
             </div>
-            <div class="client">
-                <div class="item__client">
-                    <svg class="sprite-user" width="22" height="26">
-                        <use xlink:href="icons.svg#sprite-user"></use>
-                    </svg>
+            <div class="header-menu__bottom">
+                <div class="header-menu__bottom__left">
+                    <div class="logo">
+                        <img src="img/wezom_logo.png" alt="">
+                    </div>
+                    <nav class="catalog">
+                        <a class="item__catalog">Товары по питомцам
+                            <svg class="arr__down" width="12" height="14">
+                                <use xlink:href="icons.svg#sprite-arr-down"></use>
+                            </svg>
+                        </a>
+                        <a class="item__catalog">Бренды
+                            <svg class="arr__down" width="12" height="14">
+                                <use xlink:href="icons.svg#sprite-arr-down"></use>
+                            </svg>
+                        </a>
+                        <a class="item__catalog">Ветаптека
+                            <svg class="arr__down" width="12" height="14">
+                                <use xlink:href="icons.svg#sprite-arr-down"></use>
+                            </svg>
+                        </a>
+                        <a class="item__catalog">Найди друга</a>
+                        <a class="item__catalog">Ветклиники</a>
+                    </nav>
                 </div>
-                <div class="item__client">
-                    <svg class="sprite-fav" width="32" height="32">
-                        <use xlink:href="icons.svg#sprite-fav"></use>
-                    </svg>
+                <div class="header-menu__bottom__right">
+                    <form action="#" class="header-form">
+                        <button class="header-form__button" type="button" aria-label="search">
+                            <svg class="sprite-search" width="20" height="20">
+                                <use xlink:href="icons.svg#sprite-search"></use>
+                            </svg>
+                        </button>
+                        <input class="header-form__input" type="text" name="search" placeholder="Поиск">
+                    </form>
+                    <div class="client">
+                        <div class="item__client">
+                            <svg class="sprite-user" width="22" height="26">
+                                <use xlink:href="icons.svg#sprite-user"></use>
+                            </svg>
+                        </div>
+                        <div class="item__client">
+                            <svg class="sprite-fav" width="32" height="32">
+                                <use xlink:href="icons.svg#sprite-fav"></use>
+                            </svg>
+                        </div>
+                        <div class="item__client">
+                            <svg class="sprite-basket" width="32" height="32">
+                                <use xlink:href="icons.svg#sprite-basket"></use>
+                            </svg>
+                        </div>
+                        <div class="number">0</div>
+                    </div>
                 </div>
-                <div class="item__client">
-                    <svg class="sprite-basket" width="32" height="32">
-                        <use xlink:href="icons.svg#sprite-basket"></use>
-                    </svg>
-                </div>
-                <div class="number">0</div>
             </div>
         </div>
     </div>
@@ -62,69 +108,18 @@
 
 <main>
     <div class="container">
-        <div class="slider">
-            <div class="card">
-                <div class="card__top">
-                    <div class="top">
-                        <div class="label">
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card__product">
-                        <a href="#">
-                            <img class="product" src="img/product/prod1.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="card__info">
-                    <div class="text--black">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых
-                        пород
-                    </div>
-                    <div class="rating">
-                        <svg class="sprite-star" width="14" height="14">
-                            <use xlink:href="icons.svg#sprite-star"></use>
-                        </svg>
-                        <svg class="sprite-star" width="14" height="14">
-                            <use xlink:href="icons.svg#sprite-star"></use>
-                        </svg>
-                        <svg class="sprite-star" width="14" height="14">
-                            <use xlink:href="icons.svg#sprite-star"></use>
-                        </svg>
-                        <svg class="sprite-star" width="14" height="14">
-                            <use xlink:href="icons.svg#sprite-star"></use>
-                        </svg>
-                        <svg class="bad-star" width="14" height="14">
-                            <use xlink:href="icons.svg#sprite-star"></use>
-                        </svg>
-                        <span class="rating__reviews big">(12)</span>
-                    </div>
-                    <div class="trade">
-                        <div class="trade-price">
-                            <div class="trade-price__bottom">
-                                <div class="trade-price__discount">от 260,22</div>
-                                <div class="trade-price__new">от 206,71 ₴</div>
-                            </div>
-                            <div class="price__old">
-                                <div class="trade-price__top">
-                                    <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <span class="prc">от 198,22 ₴</span>
-                            </div>
-                        </div>
-                        <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
-                                <use xlink:href="icons.svg#sprite-basket"></use>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+        <div class="best">
+            <div class="best-deals">
+                Лучшие предложения недели
             </div>
+            <div class="best-deals__item">
+                <a class="deals__item-link">Собакам</a>
+                <a class="deals__item-link">Кошкам</a>
+                <a class="deals__item-link">Птицам</a>
+                <a class="deals__item-link">Грызунам</a>
+            </div>
+        </div>
+        <div class="slider">
             <div class="card">
                 <div class="card__top">
                     <div class="top">
@@ -183,6 +178,68 @@
                                     </div>
                                 </div>
                                 <span class="prc">1 550,22 ₴</span>
+                            </div>
+                        </div>
+                        <div class="basket">
+                            <svg class="basket--blue" width="21" height="20">
+                                <use xlink:href="icons.svg#sprite-basket"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__top">
+                    <div class="top">
+                        <div class="label">
+                            <div class="label--discount">
+                                <a class="text--white">Скидка -5%</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card__product">
+                        <a href="#">
+                            <img class="product" src="img/product/prod1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="card__info">
+                    <div class="text--black">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых
+                        пород
+                    </div>
+                    <div class="rating">
+                        <svg class="sprite-star" width="14" height="14">
+                            <use xlink:href="icons.svg#sprite-star"></use>
+                        </svg>
+                        <svg class="sprite-star" width="14" height="14">
+                            <use xlink:href="icons.svg#sprite-star"></use>
+                        </svg>
+                        <svg class="sprite-star" width="14" height="14">
+                            <use xlink:href="icons.svg#sprite-star"></use>
+                        </svg>
+                        <svg class="sprite-star" width="14" height="14">
+                            <use xlink:href="icons.svg#sprite-star"></use>
+                        </svg>
+                        <svg class="bad-star" width="14" height="14">
+                            <use xlink:href="icons.svg#sprite-star"></use>
+                        </svg>
+                        <span class="rating__reviews big">(12)</span>
+                    </div>
+                    <div class="trade">
+                        <div class="trade-price">
+                            <div class="trade-price__bottom">
+                                <div class="trade-price__discount">от 260,22</div>
+                                <div class="trade-price__new">от 206,71 ₴</div>
+                            </div>
+                            <div class="price__old">
+                                <div class="trade-price__top">
+                                    <div class="trade-price__oldd">
+                                        <svg class="sprite-update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <span class="prc">от 198,22 ₴</span>
                             </div>
                         </div>
                         <div class="basket">
@@ -648,6 +705,69 @@
                 </div>
             </div>
         </div>
+        <div class="block-blog">
+            <div class="search-blog">
+                <div class="search-blog__body">
+                    <div class="search-blog__title">
+                        Объявления о продаже
+                    </div>
+                    <svg class="sprite-lapka" width="41" height="40">
+                        <use xlink:href="icons.svg#sprite-lapka"></use>
+                    </svg>
+                    <div class="title title__theme--green">Найди друга</div>
+                    <div class="search-blog__info">Ищете питомца? Посмотрите сотни объявлений от проверенных
+                        разводителей.
+                    </div>
+                    <div class="search-blog__img">
+                        <div class="search-blog__item">
+                            <img src="img/search-blog/1.png" alt="">
+                        </div>
+                        <div class="search-blog__item">
+                            <img src="img/search-blog/2.png" alt="">
+                        </div>
+                        <div class="search-blog__item">
+                            <img src="img/search-blog/3.png" alt="">
+                        </div>
+                        <div class="search-blog__item">
+                            <img src="img/search-blog/4.png" alt="">
+                        </div>
+                        <div class="search-blog__item">
+                            <img src="img/search-blog/5.png" alt="">
+                        </div>
+                        <div class="search-blog__item">
+                            <img src="img/search-blog/6.png" alt="">
+                        </div>
+                    </div>
+                    <div class="search-blog__button">
+                        <button class="button">
+                            <div class="button-body">
+                                <div class="button-body__text"> Все объявления</div>
+                                <svg class="button-body__icon" width="12" height="12">
+                                    <use xlink:href="icons.svg#sprite-arr-right"></use>
+                                </svg>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="blog">
+                <div class="title title__theme--black">Полезные материалы</div>
+                <div class="blog-info">
+                    <div class="blog-catalog">
+                        <a href="#" class="blog-catalog__item">Новости</a>
+                        <a href="#" class="blog-catalog__item">Полезные советы</a>
+                        <a href="#" class="blog-catalog__item">Видео</a>
+                        <a href="#" class="blog-catalog__item">Обзоры товаров</a>
+                        <a href="#" class="blog-catalog__item">Лайфхаки</a>
+                    </div>
+                    <a href="#" class="link-blog">
+                        <span class="link-blog__text">
+                            Перейти в блог
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
 
@@ -707,7 +827,9 @@
             </div>
             <div class="footer-bottom__corp">
                 <div class="bottom__corp-left">© 2021 Тестовое задание</div>
-                <div class="bottom__corp-right"><div>Разработано в</div><span>WEZOM</span>
+                <div class="bottom__corp-right">
+                    <div>Разработано в</div>
+                    <span>WEZOM</span>
                 </div>
             </div>
         </div>
