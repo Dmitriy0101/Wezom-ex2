@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a41a14c-cd90-4d96-9250-f70dcb825f7c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UI-kit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Index.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/wezom_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-    </list>
+    <list default="true" id="7a41a14c-cd90-4d96-9250-f70dcb825f7c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,6 +55,7 @@
       <workItem from="1635157441232" duration="15457000" />
       <workItem from="1635243187967" duration="11078000" />
       <workItem from="1635276495385" duration="6821000" />
+      <workItem from="1635325199757" duration="602000" />
     </task>
     <servers />
   </component>
