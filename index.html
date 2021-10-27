@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wezom ex2</title>
     <link rel="stylesheet" href="css/normalize.css">
@@ -11,95 +11,90 @@
 </head>
 <body>
 <header class="header">
-    <div class="container--header">
-        <div class="burger-header">
-            <span></span>
-        </div>
-        <div class="header-menu">
-            <div class="header-menu__top">
-                <div class="header-menu__top__left">
-                    <div class="location">
-                        <svg class="sprite-location" width="12" height="14">
-                            <use xlink:href="icons.svg#sprite-location"></use>
+    <div class="burger-menu">
+        <span></span>
+    </div>
+    <div class="header-menu">
+        <div class="header-menu__top">
+            <div class="header-menu__top-left">
+                <div class="top-left__item">
+                    <div class="region">
+                        <svg class="sprite-region" width="12" height="14">
+                            <use xlink:href="icons.svg#region"></use>
                         </svg>
-                        <div class="location-name">Херсон</div>
-                    </div>
-                    <div class="menu__top-item">
-                        <div class="top-item__link">Магазины</div>
-                        <div class="top-item__link">Блог</div>
-                        <div class="top-item__link">Покупателям</div>
-                        <svg class="arr__down" width="12" height="14">
-                            <use xlink:href="icons.svg#sprite-arr-down"></use>
-                        </svg>
+                        <div class="region-name">Херсон</div>
                     </div>
                 </div>
-                <div class="header-menu__top__right">
+                <div class="top-left__item">
+                    <a href="#" class="top-left__item-link">Магазины</a>
+                    <a href="#" class="top-left__item-link">Блог</a>
+                    <a href="#" class="top-left__item-link">Покупателям</a>
+                    <svg class="arr-down" width="12" height="14">
+                        <use xlink:href="icons.svg#arr-down"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-menu__top-right">
+                <div class="top-right__item">
                     <div class="phones">
                         <div class="phones-text">Консультация:</div>
                         <a class="phones-number" href="tel:0444903100">(044) 490 31 00</a>
-                        <svg class="sprite-arr__down" width="12" height="14">
-                            <use xlink:href="icons.svg#sprite-arr-down"></use>
+                        <svg class="arr-down" width="12" height="14">
+                            <use xlink:href="icons.svg#arr-down"></use>
                         </svg>
                     </div>
+                </div>
+                <div class="top-right__item">
                     <div class="lang">
-                        <div class="lang__link">УКР</div>
-                        <div class="lang__link">РУС</div>
-                        <div class="lang__link">ENG</div>
+                        <a href="#" class="lang__link">УКР</a>
+                        <a href="#" class="lang__link">РУС</a>
+                        <a href="#" class="lang__link">ENG</a>
                     </div>
                 </div>
             </div>
-            <div class="header-menu__bottom">
-                <div class="header-menu__bottom__left">
-                    <div class="logo">
-                        <img src="img/wezom_logo.png" alt="">
-                    </div>
-                    <nav class="catalog">
-                        <a class="item__catalog">Товары по питомцам
-                            <svg class="arr__down" width="12" height="14">
-                                <use xlink:href="icons.svg#sprite-arr-down"></use>
-                            </svg>
-                        </a>
-                        <a class="item__catalog">Бренды
-                            <svg class="arr__down" width="12" height="14">
-                                <use xlink:href="icons.svg#sprite-arr-down"></use>
-                            </svg>
-                        </a>
-                        <a class="item__catalog">Ветаптека
-                            <svg class="arr__down" width="12" height="14">
-                                <use xlink:href="icons.svg#sprite-arr-down"></use>
-                            </svg>
-                        </a>
-                        <a class="item__catalog">Найди друга</a>
-                        <a class="item__catalog">Ветклиники</a>
-                    </nav>
-                </div>
-                <div class="header-menu__bottom__right">
-                    <form action="#" class="header-form">
-                        <button class="header-form__button" type="button" aria-label="search">
-                            <svg class="sprite-search" width="20" height="20">
-                                <use xlink:href="icons.svg#sprite-search"></use>
-                            </svg>
-                        </button>
-                        <input class="header-form__input" type="text" name="search" placeholder="Поиск">
-                    </form>
-                    <div class="client">
-                        <div class="item__client">
-                            <svg class="sprite-user" width="22" height="26">
-                                <use xlink:href="icons.svg#sprite-user"></use>
-                            </svg>
-                        </div>
-                        <div class="item__client">
-                            <svg class="sprite-fav" width="32" height="32">
-                                <use xlink:href="icons.svg#sprite-fav"></use>
-                            </svg>
-                        </div>
-                        <div class="item__client">
-                            <svg class="sprite-basket" width="32" height="32">
-                                <use xlink:href="icons.svg#sprite-basket"></use>
-                            </svg>
-                        </div>
-                        <div class="number">0</div>
-                    </div>
+        </div>
+        <div class="header-menu__bottom">
+            <div class="header-menu__bottom-left">
+                <a href="#" class="logotip">
+                    <svg class="logo" width="117" height="45">
+                        <use xlink:href="icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <button class="Catalog">Catalog</button>
+                <nav class="catalog">
+                    <a href="#" class="catalog-item">Товары по питомцам</a>
+                    <a href="#" class="catalog-item">Бренды</a>
+                    <a href="#" class="catalog-item">Ветаптека</a>
+                    <a href="#" class="catalog-item">Найди друга</a>
+                    <a href="#" class="catalog-item">Ветклиники</a>
+                </nav>
+            </div>
+            <div class="header-menu__bottom-right">
+                <form action="#" class="header-form">
+                    <button class="header-form__button" type="button" aria-label="search">
+                        <svg class="search" width="26" height="26">
+                            <use xlink:href="icons.svg#search"></use>
+                        </svg>
+                    </button>
+                    <input class="header-form__input" type="text" name="search" placeholder="Поиск">
+                </form>
+                <div class="header-actions">
+                    <button class="header-actions__item">
+                        <svg class="wish" width="22" height="26">
+                            <use xlink:href="icons.svg#user"></use>
+                        </svg>
+                    </button>
+                    <button class="header-actions__item">
+                        <svg class="wish" width="27" height="25">
+                            <use xlink:href="icons.svg#fav"></use>
+                        </svg>
+                    </button>
+                    <button class="header-actions__item">
+                        <svg class="wish" width="32" height="32">
+                            <use xlink:href="icons.svg#basket"></use>
+                        </svg>
+                    </button>
+                    <div class="number">0</div>
                 </div>
             </div>
         </div>
@@ -172,8 +167,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -181,8 +176,8 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
-                                <use xlink:href="icons.svg#sprite-basket"></use>
+                            <svg class="sprite-basket basket--blue" width="21" height="20">
+                                <use xlink:href="icons.svg#basket"></use>
                             </svg>
                         </div>
                     </div>
@@ -234,8 +229,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -300,8 +295,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -363,8 +358,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -429,8 +424,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -491,8 +486,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -559,8 +554,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -625,8 +620,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -688,8 +683,8 @@
                             <div class="price__old">
                                 <div class="trade-price__top">
                                     <div class="trade-price__oldd">
-                                        <svg class="sprite-update" width="10.62" height="14">
-                                            <use xlink:href="icons.svg#sprite-update"></use>
+                                        <svg class="update" width="10.62" height="14">
+                                            <use xlink:href="icons.svg#update"></use>
                                         </svg>
                                     </div>
                                 </div>
@@ -742,8 +737,8 @@
                         <button class="button">
                             <div class="button-body">
                                 <div class="button-body__text"> Все объявления</div>
-                                <svg class="button-body__icon" width="12" height="12">
-                                    <use xlink:href="icons.svg#sprite-arr-right"></use>
+                                <svg class="arr-right" width="12" height="12">
+                                    <use xlink:href="icons.svg#arr-right"></use>
                                 </svg>
                             </div>
                         </button>
@@ -771,13 +766,13 @@
     </div>
 </main>
 
-<footer>
-    <div class="footer-top">
+<footer class="footer">
+    <div class="footer-line">
         <div class="logo__pet">
             <img src="img/dog.png" alt="">
         </div>
         <div class="registration">
-            <div class="footer-top__info">
+            <div class="footer-line__info">
                 <span class="text--black text--black-big">Специальные предложения для <br> зарегистрированных пользователей</span>
             </div>
             <button class="regis">
@@ -785,51 +780,118 @@
             </button>
         </div>
     </div>
-    <div class="footer-bottom">
+    <div class="footer-body">
         <div class="container">
-            <div class="footer-bottom__info">
-                <div class="logo logo--footer">
-                    <img src="img/wezom_logo.png" alt="">
-                </div>
-                <div class="footer-about">
-                    <div class="footer-about__item">
-                        <div class="footer-title">Блок 1</div>
-                        <div class="footer-about__list">
-                            <a class="about__list-item" href="#">Ссылка 1</a>
-                            <a class="about__list-item" href="#">Ссылка 2</a>
-                            <a class="about__list-item" href="#">Длинная ссылка 3</a>
-                            <a class="about__list-item" href="#">Ссылка 4</a>
-                        </div>
-                    </div>
-                    <div class="footer-about__item">
-                        <div class="footer-title">Блок 2</div>
-                        <div class="footer-about__list">
-                            <a class="about__list-item" href="#">Ссылка 1</a>
-                            <a class="about__list-item" href="#">Ссылка 2</a>
-                            <a class="about__list-item" href="#">Длинная ссылка 3</a>
-                            <a class="about__list-item" href="#">Ссылка 4</a>
-                        </div>
-                    </div>
-                    <div class="footer-about__item">
-                        <div class="footer-title">Блок 3</div>
-                        <div class="footer-about__list">
-                            <a class="about__list-item" href="#">Ссылка 1</a>
-                            <a class="about__list-item" href="#">Длинная ссылка 3</a>
-                        </div>
+            <div class="footer-body__block">
+                <div class="footer-body__block-site">
+                    <a href="#" class="logotip">
+                        <svg class="logo" width="117" height="45">
+                            <use xlink:href="icons.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <div class="site-info">© 2020 Интернет-магазин</div>
+                    <div class="footer-about__list">
+                        <a class="about__list-item site-text" href="#">Условия использования сайта</a>
+                        <a class="about__list-item site-text" href="#">Защита персональных данных</a>
+                        <a class="about__list-item site-text" href="#">Карта сайта</a>
                     </div>
                 </div>
-                <div class="scroll-up">
-                    <span class="scroll-up__txt ">Вверх</span>
-                    <button class="scroll-up__button">
-                        <img class="scroll-up__icon" src="img/arrow/arr-up.svg" alt="">
-                    </button>
-                </div>
-            </div>
-            <div class="footer-bottom__corp">
-                <div class="bottom__corp-left">© 2021 Тестовое задание</div>
-                <div class="bottom__corp-right">
-                    <div>Разработано в</div>
-                    <span>WEZOM</span>
+
+                <div class="footer-body__block-info">
+                    <div class="block-info">
+                        <div class="block-info__about">
+                            <div class="footer-social">
+                                <div class="social">
+                                    <a href="https://www.facebook.com/" class="social-link circle">
+                                        <svg class="social-networks" width="12" height="24">
+                                            <use xlink:href="icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.instagram.com/" class="social-link circle">
+                                        <svg class="social-networks" width="24" height="24">
+                                            <use xlink:href="icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="https://www.viber.com/" class="social-link circle">
+                                        <svg class="social-networks" width="22" height="24">
+                                            <use xlink:href="icons.svg#viber"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="feedback">
+                                    <div class="chat">
+                                        <a href="#" class="feedback-button">
+                                            <svg class="feedback-icon" width="33" height="33">
+                                                <use xlink:href="icons.svg#chat"></use>
+                                            </svg>
+                                        </a>
+                                        <a class="feedback-text">Чат онлайн</a>
+                                    </div>
+                                    <div class="writing">
+                                        <a href="#" class="feedback-button">
+                                            <svg class="feedback-icon" width="33" height="33">
+                                                <use xlink:href="icons.svg#message"></use>
+                                            </svg>
+                                            <a class="feedback-text">Написать нам</a>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-about">
+                                <div class="footer-about__item">
+                                    <div class="footer-title">Компания</div>
+                                    <div class="footer-about__list">
+                                        <a class="about__list-item" href="#">О компании</a>
+                                        <a class="about__list-item" href="#">Адреса магазинов «ZooBonus»</a>
+                                        <a class="about__list-item" href="#">Вакансии</a>
+                                        <a class="about__list-item" href="#">Благотворительность</a>
+                                        <a class="about__list-item" href="#">Контакты</a>
+                                    </div>
+                                </div>
+                                <div class="footer-about__item">
+                                    <div class="footer-title">Покупателям</div>
+                                    <div class="footer-about__list">
+                                        <a class="about__list-item" href="#">Доставка и оплата</a>
+                                        <a class="about__list-item" href="#">FAQ</a>
+                                        <a class="about__list-item" href="#">Подарочные сертификаты</a>
+                                        <a class="about__list-item" href="#">Акции </a>
+                                        <a class="about__list-item" href="#">Породы животных</a>
+                                        <a class="about__list-item" href="#">Дисконтная программа</a>
+                                        <a class="about__list-item" href="#">Блог</a>
+                                        <a class="about__list-item" href="#">Фотогалерея</a>
+                                    </div>
+                                </div>
+                                <div class="footer-about__item">
+                                    <div class="footer-title">Контакты</div>
+                                    <div class="footer-about__list">
+                                        <a class="about__list-item" href="#">Информационная служба:</a>
+                                        <a class="about__list-item phones-number phones-number--big"
+                                           href="tel:0444903100">(044) 490 31 00</a>
+                                        <a class="about__list-item" href="#">Ежедневно с 08:30-21:00</a>
+                                        <div class="about__list-item email">
+                                            <div class="email-txt">Email:</div>
+                                            <a class="email-link" href="#">info@wezom.com.ua</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroll-up">
+                            <span class="scroll-up__txt ">Вверх</span>
+                            <button class="scroll-up__button circle">
+                                <svg class="arr-up" width="12" height="12">
+                                    <use xlink:href="icons.svg#arr-up"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="footer-body__corp">
+                        <div class="bottom__corp-left">© 2021 Тестовое задание</div>
+                        <div class="bottom__corp-right">
+                            <div>Разработано в</div>
+                            <span>WEZOM</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

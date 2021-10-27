@@ -1,20 +1,78 @@
-.sprite-location{
+.logo {
+    fill: #2C9323;
 }
-.arr__down{}
-.bad-star {
-    fill: #E0E0E0;
-    margin-right: 1px;
+
+.sprite-region {
+    fill: #7B94B0;
 }
-.sprite-star {
-    fill: #E77E42;
+
+.search {
+    fill: none;
+    stroke: #202454;
 }
+
+.search:hover {
+    stroke: #E77E42;
+}
+
+.wish {
+    fill: none;
+    stroke: #202454;
+}
+
+.wish:hover {
+    stroke: #E77E42;
+}
+
 .sprite-basket {
+    fill: none;
     stroke: #202454;
 }
 
 .basket--blue {
     stroke: #3A9EFD;
 }
-.sprite-user{
+
+.arr-down {
+    fill: none;
+    stroke: #7B94B0;
+}
+
+.arr-up {
+    fill: none;
+    stroke: #fff;
+}
+
+.arr-right {
+    fill: none;
+    stroke: #fff;
+}
+
+.update {
+    fill: #fff;
+}
+
+.social-networks{
+    fill: #FFFFFF;
+}
+.social-networks:hover{
+    fill: #2C9323;
+}
+
+.feedback-icon{
+    fill: #E77E42;
+}
+
+.bad-star {
+    fill: #E0E0E0;
+    margin-right: 1px;
+}
+
+.sprite-star {
+    fill: #E77E42;
+}
+
+
+.sprite-user {
     stroke: #202454;
 }

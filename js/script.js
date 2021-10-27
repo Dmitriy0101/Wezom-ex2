@@ -1,5 +1,5 @@
 // <------ Burger START ------>
-const iconMenu = document.querySelector('.burger-header');
+const iconMenu = document.querySelector('.burger-menu');
 if (iconMenu) {
     const headerMenu = document.querySelector('.header-menu');
     iconMenu.addEventListener("click", function (e) {
@@ -64,3 +64,4 @@ $('.slider').slick({
     ]
 });
 // <------ Slider END ------>
+

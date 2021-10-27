@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a41a14c-cd90-4d96-9250-f70dcb825f7c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/UI-kit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Index.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/Index.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sprite.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/wezom_logo.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slick.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/index.html" root0="FORCE_HIGHLIGHTING" />
@@ -50,10 +60,27 @@
       <workItem from="1634812884676" duration="11745000" />
       <workItem from="1634834563148" duration="3974000" />
       <workItem from="1634881131638" duration="6099000" />
+      <workItem from="1634887807076" duration="1187000" />
+      <workItem from="1635077033046" duration="595000" />
+      <workItem from="1635157441232" duration="15457000" />
+      <workItem from="1635243187967" duration="11078000" />
+      <workItem from="1635276495385" duration="6821000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
