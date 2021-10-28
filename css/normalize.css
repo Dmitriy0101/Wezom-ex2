@@ -277,8 +277,8 @@ textarea {
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type="shopping-card__count"]::-webkit-inner-spin-button,
+[type="shopping-card__count"]::-webkit-outer-spin-button {
     height: auto;
 }
 

@@ -1,9 +1,17 @@
 .logo {
     fill: #2C9323;
 }
-
-.sprite-region {
+.logo-theme--white{
+    fill: #FFFFFF;
+}
+.logo--footer{
+    fill: #2C9323;
+}
+.sprite__region {
     fill: #7B94B0;
+}
+.sprite__region:hover{
+    fill: #202454;
 }
 
 .search {
@@ -12,7 +20,7 @@
 }
 
 .search:hover {
-    stroke: #E77E42;
+    stroke: #3A9EFD;
 }
 
 .wish {
@@ -21,7 +29,7 @@
 }
 
 .wish:hover {
-    stroke: #E77E42;
+    stroke: #3A9EFD;
 }
 
 .sprite-basket {
@@ -38,6 +46,10 @@
     stroke: #7B94B0;
 }
 
+.arr-down:hover {
+    stroke: #202454;
+}
+
 .arr-up {
     fill: none;
     stroke: #fff;
@@ -52,14 +64,15 @@
     fill: #fff;
 }
 
-.social-networks{
+.social-networks {
     fill: #FFFFFF;
 }
-.social-networks:hover{
-    fill: #2C9323;
+
+.social-networks:hover {
+    fill: #E77E42;
 }
 
-.feedback-icon{
+.feedback-icon {
     fill: #E77E42;
 }
 
@@ -71,8 +84,9 @@
 .sprite-star {
     fill: #E77E42;
 }
-
-
 .sprite-user {
     stroke: #202454;
+}
+.telephone{
+    fill: #33485D;
 }

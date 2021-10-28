@@ -17,38 +17,46 @@
     <div class="header-menu">
         <div class="header-menu__top">
             <div class="header-menu__top-left">
-                <div class="top-left__item">
-                    <div class="region">
-                        <svg class="sprite-region" width="12" height="14">
-                            <use xlink:href="icons.svg#region"></use>
-                        </svg>
-                        <div class="region-name">Херсон</div>
+                <div class="top-left">
+                    <div class="top-left__item">
+                        <div class="region">
+                            <button class="region__button">
+                                <svg class="sprite__region" width="12" height="14">
+                                    <use xlink:href="icons.svg#region"></use>
+                                </svg>
+                            </button>
+                            <div class="region__name">Херсон</div>
+                        </div>
                     </div>
-                </div>
-                <div class="top-left__item">
-                    <a href="#" class="top-left__item-link">Магазины</a>
-                    <a href="#" class="top-left__item-link">Блог</a>
-                    <a href="#" class="top-left__item-link">Покупателям</a>
-                    <svg class="arr-down" width="12" height="14">
-                        <use xlink:href="icons.svg#arr-down"></use>
-                    </svg>
-                </div>
-            </div>
-            <div class="header-menu__top-right">
-                <div class="top-right__item">
-                    <div class="phones">
-                        <div class="phones-text">Консультация:</div>
-                        <a class="phones-number" href="tel:0444903100">(044) 490 31 00</a>
+                    <div class="top-left__item">
+                        <a href="#" class="top-left__item-link">Магазины</a>
+                        <a href="#" class="top-left__item-link">Блог</a>
+                        <a href="#" class="top-left__item-link">Покупателям</a>
                         <svg class="arr-down" width="12" height="14">
                             <use xlink:href="icons.svg#arr-down"></use>
                         </svg>
                     </div>
                 </div>
-                <div class="top-right__item">
-                    <div class="lang">
-                        <a href="#" class="lang__link">УКР</a>
-                        <a href="#" class="lang__link">РУС</a>
-                        <a href="#" class="lang__link">ENG</a>
+            </div>
+            <div class="header-menu__top-right">
+                <div class="top-right">
+                    <div class="top-right__item">
+                        <div class="phones">
+                            <div class="phones__text">Консультация:</div>
+                            <a class="phones__shopping-card__count" href="tel:0444903100">(044) 490 31 00</a>
+                            <button class="phones__dropdown">
+                                <svg class="arr-down" width="12" height="14">
+                                    <use xlink:href="icons.svg#arr-down"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="top-right__item">
+                        <div class="lang">
+                            <a href="#" class="lang__link">УКР</a>
+                            <a href="#" class="lang__link lang__link--active">РУС</a>
+                            <a href="#" class="lang__link">ENG</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,13 +68,12 @@
                         <use xlink:href="icons.svg#logo"></use>
                     </svg>
                 </a>
-                <button class="Catalog">Catalog</button>
                 <nav class="catalog">
-                    <a href="#" class="catalog-item">Товары по питомцам</a>
-                    <a href="#" class="catalog-item">Бренды</a>
-                    <a href="#" class="catalog-item">Ветаптека</a>
-                    <a href="#" class="catalog-item">Найди друга</a>
-                    <a href="#" class="catalog-item">Ветклиники</a>
+                    <a href="#" class="catalog__item">Товары по питомцам</a>
+                    <a href="#" class="catalog__item">Бренды</a>
+                    <a href="#" class="catalog__item">Ветаптека</a>
+                    <a href="#" class="catalog__item">Найди друга</a>
+                    <a href="#" class="catalog__item">Ветклиники</a>
                 </nav>
             </div>
             <div class="header-menu__bottom-right">
@@ -79,29 +86,151 @@
                     <input class="header-form__input" type="text" name="search" placeholder="Поиск">
                 </form>
                 <div class="header-actions">
-                    <button class="header-actions__item">
+                    <button class="user">
                         <svg class="wish" width="22" height="26">
                             <use xlink:href="icons.svg#user"></use>
                         </svg>
                     </button>
-                    <button class="header-actions__item">
+                    <button class="favorite">
                         <svg class="wish" width="27" height="25">
                             <use xlink:href="icons.svg#fav"></use>
                         </svg>
                     </button>
-                    <button class="header-actions__item">
-                        <svg class="wish" width="32" height="32">
-                            <use xlink:href="icons.svg#basket"></use>
-                        </svg>
+                    <button class="shopping-card">
+                        <div class="shopping-card__item">
+                            <svg class="shopping-card__icon wish" width="32" height="32">
+                                <use xlink:href="icons.svg#basket"></use>
+                            </svg>
+                            <div class="shopping-card__count">0</div>
+                        </div>
                     </button>
-                    <div class="number">0</div>
                 </div>
             </div>
         </div>
     </div>
+    <button type="button" class="menu-button is-open" data-menu-button>
+        <svg class="icon" width="30" height="30" aria-label="переключение мобильного меню">
+            <use class="icon-menu" href='icons.svg#menu'></use>
+            <use class="icon-exit" href='icons.svg#exit'></use>
+        </svg>
+    </button>
+    <div class="menu-mobile" data-menu>
+        <div class="menu-mobile__content" data-menu-content>
+            <div class="menu-mobile__header">
+                <a href="#" class="menu-mobile__logo">
+                    <svg class="logo-theme--white" width="50" height="31">
+                        <use href="icons.svg#logo"></use>
+                    </svg>
+                </a>
+                <div class="menu-mobile__user">
+                    <a href="#" class="menu-mobile__icon">
+                        <svg class="wish" width="70" height="70">
+                            <use href="icons.svg#user"></use>
+                        </svg>
+                    </a>
+                    <div class="menu-mobile__text">
+                        <a class="menu-mobile__text-item">Войти</a>
+                        <a class="menu-mobile__text-item">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-mobile__body">
+                <div class="menu-mobile__region">
+                    <button class="region__button">
+                        <svg class="sprite__region" width="12" height="14">
+                            <use xlink:href="icons.svg#region"></use>
+                        </svg>
+                    </button>
+                    <div class="region__name">Херсон</div>
+                </div>
+                <div class="menu-mobile__list">
+                    <button type="button" class="menu-mobile__list-item">
+                        <svg class="wish" width="30" height="30">
+                            <use href="icons.svg#fav"></use>
+                        </svg>
+                        <div class="menu-mobile__list-text">Список желаний</div>
+                    </button>
+                    <button type="button" class="menu-mobile__list-item shopping-card">
+                        <div class="shopping-card__item">
+                            <svg class="shopping-card__icon wish" width="32" height="32">
+                                <use xlink:href="icons.svg#basket"></use>
+                            </svg>
+                            <div class="shopping-card__count">0</div>
+                        </div>
+                        <div class="menu-mobile__list-text">Корзина</div>
+                    </button>
+                    <a href="tel:0444903100" class="menu-mobile__list-item">
+                        <svg class="telephone" width="30" height="30">
+                            <use href="icons.svg#telephone"></use>
+                        </svg>
+                        <div class="menu-mobile__list-text">(044) 490 31 00</div>
+                    </a>
+                </div>
+                <div class="menu-mobile__lang ">
+                    <div class="lang">
+                        <a href="#" class="lang__link">УКР</a>
+                        <a href="#" class="lang__link">РУС</a>
+                        <a href="#" class="lang__link">ENG</a>
+                    </div>
+                </div>
+                <nav class="menu-mobile__menu mobile-nav">
+                    <a class="menu-mobile__link mobile-nav__link" href="#">Магазины</a>
+                    <a class="menu-mobile__link mobile-nav__link" href="#">Блог</a>
+                    <a class="menu-mobile__link mobile-nav__link" href="#">Покупателям</a>
+                </nav>
+                <div class="menu-mobile__catalog">
+                    <div class="menu-mobile__title">Каталог</div>
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Товары по питомцам</a>
+                        <a href="#" class="menu-mobile__link">Бренды</a>
+                        <a href="#" class="menu-mobile__link">Ветаптека</a>
+                        <a href="#" class="menu-mobile__link">Найди друга</a>
+                        <a href="#" class="menu-mobile__link">Ветклиники</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__company">
+                    <div class="menu-mobile__title">Компания</div>
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">О компании</a>
+                        <a href="#" class="menu-mobile__link">Адреса магазинов «ZooBonus»</a>
+                        <a href="#" class="menu-mobile__link">Вакансии</a>
+                        <a href="#" class="menu-mobile__link">Благотворительность</a>
+                        <a href="#" class="menu-mobile__link">Контакты</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__customers">
+                    <div class="menu-mobile__title">Покупателям</div>
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Доставка и оплата</a>
+                        <a href="#" class="menu-mobile__link">FAQ</a>
+                        <a href="#" class="menu-mobile__link">Подарочные сертификаты</a>
+                        <a href="#" class="menu-mobile__link">Акции</a>
+                        <a href="#" class="menu-mobile__link">Породы животных</a>
+                        <a href="#" class="menu-mobile__link">Дисконтная программа</a>
+                        <a href="#" class="menu-mobile__link">Блог</a>
+                        <a href="#" class="menu-mobile__link">Фотогалерея</a>
+                    </div>
+                </div>
+                <div class="menu-mobile__help">
+                    <div class="menu-mobile__title">Контакты</div>
+                    <div class="menu-mobile__item">
+                        <a href="#" class="menu-mobile__link">Email:info@wezom.com.ua</a>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="menu-mobile__close" data-menu-close data-menu-button>
+                <svg class="menu-mobile__icon icon" width="16" height="16"
+                     aria-label="переключение мобильного меню">
+                    <use href='icons.svg#exit'></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    </div>
+    </div>
 </header>
 
-<main>
+<!--<main>
     <div class="container">
         <div class="best">
             <div class="best-deals">
@@ -119,11 +248,11 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--purple">
-                                <a class="text--white">ТОП продаж</a>
+                            <div class="label&#45;&#45;purple">
+                                <a class="text&#45;&#45;white">ТОП продаж</a>
                             </div>
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
+                            <div class="label&#45;&#45;discount">
+                                <a class="text&#45;&#45;white">Скидка -5%</a>
                             </div>
                         </div>
                     </div>
@@ -134,7 +263,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм с курицей, 4 кг
+                    <div class="text&#45;&#45;black">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм с курицей, 4 кг
                     </div>
                     <div class="rating">
                         <svg class="bad-star" width="14" height="14">
@@ -176,7 +305,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="sprite-basket basket--blue" width="21" height="20">
+                            <svg class="sprite-basket basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#basket"></use>
                             </svg>
                         </div>
@@ -187,8 +316,8 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
+                            <div class="label&#45;&#45;discount">
+                                <a class="text&#45;&#45;white">Скидка -5%</a>
                             </div>
                         </div>
                     </div>
@@ -199,7 +328,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых
+                    <div class="text&#45;&#45;black">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых
                         пород
                     </div>
                     <div class="rating">
@@ -238,7 +367,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -249,8 +378,8 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--new">
-                                <a class="text--white">Новинка</a>
+                            <div class="label&#45;&#45;new">
+                                <a class="text&#45;&#45;white">Новинка</a>
                             </div>
                         </div>
                     </div>
@@ -261,7 +390,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">PetKind Beef Tripe Formula Беззерновые консервы для собак с говядиной, 500
+                    <div class="text&#45;&#45;black">PetKind Beef Tripe Formula Беззерновые консервы для собак с говядиной, 500
                         мл
                     </div>
                     <div class="rating">
@@ -285,7 +414,7 @@
                     <div class="trade">
                         <div class="trade-price">
                             <div class="trade-price__bottom">
-                                <div class="trade-price__discount discount--1">
+                                <div class="trade-price__discount discount&#45;&#45;1">
                                     1 700,22
                                 </div>
                                 <div class="trade-price__new">
@@ -304,7 +433,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -315,11 +444,11 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--purple">
-                                <a class="text--white">ТОП продаж</a>
+                            <div class="label&#45;&#45;purple">
+                                <a class="text&#45;&#45;white">ТОП продаж</a>
                             </div>
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
+                            <div class="label&#45;&#45;discount">
+                                <a class="text&#45;&#45;white">Скидка -5%</a>
                             </div>
                         </div>
                     </div>
@@ -330,7 +459,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">Scalibor (Скалибор) ошейник 48 см</div>
+                    <div class="text&#45;&#45;black">Scalibor (Скалибор) ошейник 48 см</div>
                     <div class="rating">
                         <svg class="bad-star" width="14" height="14">
                             <use xlink:href="icons.svg#sprite-star"></use>
@@ -367,7 +496,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -378,8 +507,8 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--purple">
-                                <a class="text--white">ТОП продаж</a>
+                            <div class="label&#45;&#45;purple">
+                                <a class="text&#45;&#45;white">ТОП продаж</a>
                             </div>
                         </div>
                     </div>
@@ -390,7 +519,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для щенков
+                    <div class="text&#45;&#45;black">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для щенков
                         мини и малых пород, 2 кг
                     </div>
                     <div class="rating">
@@ -414,7 +543,7 @@
                     <div class="trade">
                         <div class="trade-price">
                             <div class="trade-price__bottom">
-                                <div class="trade-price__discount discount--1">
+                                <div class="trade-price__discount discount&#45;&#45;1">
                                     1 700,22
                                 </div>
                                 <div class="trade-price__new">
@@ -433,7 +562,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -444,8 +573,8 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
+                            <div class="label&#45;&#45;discount">
+                                <a class="text&#45;&#45;white">Скидка -5%</a>
                             </div>
                         </div>
                     </div>
@@ -456,7 +585,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых
+                    <div class="text&#45;&#45;black">Schesir Dog Small Adult Lamb сухой монопротеиновый корм для собак малых
                         пород
                     </div>
                     <div class="rating">
@@ -495,7 +624,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -506,11 +635,11 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--purple">
-                                <a class="text--white">ТОП продаж</a>
+                            <div class="label&#45;&#45;purple">
+                                <a class="text&#45;&#45;white">ТОП продаж</a>
                             </div>
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
+                            <div class="label&#45;&#45;discount">
+                                <a class="text&#45;&#45;white">Скидка -5%</a>
                             </div>
                         </div>
                     </div>
@@ -521,7 +650,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм с курицей, 4 кг
+                    <div class="text&#45;&#45;black">Brit Premium (Брит Премиум) by Nature ADULT L - Сухой корм с курицей, 4 кг
                     </div>
                     <div class="rating">
                         <svg class="bad-star" width="14" height="14">
@@ -563,7 +692,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -574,8 +703,8 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--purple">
-                                <a class="text--white">ТОП продаж</a>
+                            <div class="label&#45;&#45;purple">
+                                <a class="text&#45;&#45;white">ТОП продаж</a>
                             </div>
                         </div>
                     </div>
@@ -586,7 +715,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для щенков
+                    <div class="text&#45;&#45;black">1st Choice Puppy Toy&Small Lamb&Fish сухой супер премиум корм для щенков
                         мини и малых пород, 2 кг
                     </div>
                     <div class="rating">
@@ -610,7 +739,7 @@
                     <div class="trade">
                         <div class="trade-price">
                             <div class="trade-price__bottom">
-                                <div class="trade-price__discount discount--1">
+                                <div class="trade-price__discount discount&#45;&#45;1">
                                     1 700,22
                                 </div>
                                 <div class="trade-price__new">
@@ -629,7 +758,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -640,11 +769,11 @@
                 <div class="card__top">
                     <div class="top">
                         <div class="label">
-                            <div class="label--purple">
-                                <a class="text--white">ТОП продаж</a>
+                            <div class="label&#45;&#45;purple">
+                                <a class="text&#45;&#45;white">ТОП продаж</a>
                             </div>
-                            <div class="label--discount">
-                                <a class="text--white">Скидка -5%</a>
+                            <div class="label&#45;&#45;discount">
+                                <a class="text&#45;&#45;white">Скидка -5%</a>
                             </div>
                         </div>
                     </div>
@@ -655,7 +784,7 @@
                     </div>
                 </div>
                 <div class="card__info">
-                    <div class="text--black">Scalibor (Скалибор) ошейник 48 см</div>
+                    <div class="text&#45;&#45;black">Scalibor (Скалибор) ошейник 48 см</div>
                     <div class="rating">
                         <svg class="bad-star" width="14" height="14">
                             <use xlink:href="icons.svg#sprite-star"></use>
@@ -692,7 +821,7 @@
                             </div>
                         </div>
                         <div class="basket">
-                            <svg class="basket--blue" width="21" height="20">
+                            <svg class="basket&#45;&#45;blue" width="21" height="20">
                                 <use xlink:href="icons.svg#sprite-basket"></use>
                             </svg>
                         </div>
@@ -709,7 +838,7 @@
                     <svg class="sprite-lapka" width="41" height="40">
                         <use xlink:href="icons.svg#sprite-lapka"></use>
                     </svg>
-                    <div class="title title__theme--green">Найди друга</div>
+                    <div class="title title__theme&#45;&#45;green">Найди друга</div>
                     <div class="search-blog__info">Ищете питомца? Посмотрите сотни объявлений от проверенных
                         разводителей.
                     </div>
@@ -746,7 +875,7 @@
                 </div>
             </div>
             <div class="blog">
-                <div class="title title__theme--black">Полезные материалы</div>
+                <div class="title title__theme&#45;&#45;black">Полезные материалы</div>
                 <div class="blog-info">
                     <div class="blog-catalog">
                         <a href="#" class="blog-catalog__item">Новости</a>
@@ -764,7 +893,7 @@
             </div>
         </div>
     </div>
-</main>
+</main>-->
 
 <footer class="footer">
     <div class="footer-line">
@@ -785,7 +914,7 @@
             <div class="footer-body__block">
                 <div class="footer-body__block-site">
                     <a href="#" class="logotip">
-                        <svg class="logo" width="117" height="45">
+                        <svg class="logo--footer" width="117" height="45">
                             <use xlink:href="icons.svg#logo"></use>
                         </svg>
                     </a>
@@ -802,17 +931,17 @@
                         <div class="block-info__about">
                             <div class="footer-social">
                                 <div class="social">
-                                    <a href="https://www.facebook.com/" class="social-link circle">
+                                    <a href="https://www.facebook.com/" target="_blank" class="social-link circle">
                                         <svg class="social-networks" width="12" height="24">
                                             <use xlink:href="icons.svg#facebook"></use>
                                         </svg>
                                     </a>
-                                    <a href="https://www.instagram.com/" class="social-link circle">
+                                    <a href="https://www.instagram.com/" target="_blank" class="social-link circle">
                                         <svg class="social-networks" width="24" height="24">
                                             <use xlink:href="icons.svg#instagram"></use>
                                         </svg>
                                     </a>
-                                    <a href="https://www.viber.com/" class="social-link circle">
+                                    <a href="https://www.viber.com/" target="_blank" class="social-link circle">
                                         <svg class="social-networks" width="22" height="24">
                                             <use xlink:href="icons.svg#viber"></use>
                                         </svg>
@@ -865,7 +994,7 @@
                                     <div class="footer-title">Контакты</div>
                                     <div class="footer-about__list">
                                         <a class="about__list-item" href="#">Информационная служба:</a>
-                                        <a class="about__list-item phones-number phones-number--big"
+                                        <a class="about__list-item phones__shopping-card__count phones__shopping-card__count--big"
                                            href="tel:0444903100">(044) 490 31 00</a>
                                         <a class="about__list-item" href="#">Ежедневно с 08:30-21:00</a>
                                         <div class="about__list-item email">
@@ -885,11 +1014,23 @@
                             </button>
                         </div>
                     </div>
-                    <div class="footer-body__corp">
-                        <div class="bottom__corp-left">© 2021 Тестовое задание</div>
-                        <div class="bottom__corp-right">
-                            <div>Разработано в</div>
-                            <span>WEZOM</span>
+                    <div class="block-info__website">
+                        <div class="block-info__website-payment">
+                            <div class="payment">
+                                <div class="payment__item">
+                                    <img src="img/payment/portmone.svg" alt="">
+                                </div>
+                                <div class="payment__item">
+                                    <img src="img/payment/mastercard.svg" alt="">
+                                </div>
+                                <div class="payment__item">
+                                    <img src="img/payment/visa.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-info__website-corp">
+                            <div class="corp__text">Разработано в</div>
+                            <a href="https://wezom.com.ua/" target="_blank" class="corp__name">WEZOM</a>
                         </div>
                     </div>
                 </div>
