@@ -4,18 +4,10 @@
     <list default="true" id="7a41a14c-cd90-4d96-9250-f70dcb825f7c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sprite.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Roboto-Bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/Roboto-Bold.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Roboto-Regular.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/Roboto-Regular.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/RobotoCondensed-Bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/RobotoCondensed-Bold.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/arrow/arr-up.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/arrow/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/arrow/next.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/slick.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/slick.min.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +63,11 @@
       <workItem from="1635243187967" duration="11078000" />
       <workItem from="1635276495385" duration="6821000" />
       <workItem from="1635325199757" duration="15269000" />
-      <workItem from="1635435659057" duration="6111000" />
+      <workItem from="1635435659057" duration="6975000" />
+      <workItem from="1635697552689" duration="5319000" />
+      <workItem from="1635840089294" duration="17321000" />
+      <workItem from="1635941369596" duration="12173000" />
+      <workItem from="1636030458968" duration="23525000" />
     </task>
     <servers />
   </component>

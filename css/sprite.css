@@ -1,40 +1,31 @@
 .logo {
     fill: #2C9323;
 }
-.logo-theme--white{
+
+.logo-theme--white {
     fill: #FFFFFF;
 }
-.logo--footer{
+
+.logo--footer {
     fill: #2C9323;
 }
+
 .sprite__region {
     fill: #7B94B0;
 }
-.sprite__region:hover{
+
+.sprite__region:hover {
     fill: #202454;
-}
-
-.search {
-    fill: none;
-    stroke: #202454;
-}
-
-.search:hover {
-    stroke: #3A9EFD;
 }
 
 .wish {
     fill: none;
     stroke: #202454;
+    cursor: pointer;
 }
 
 .wish:hover {
     stroke: #3A9EFD;
-}
-
-.sprite-basket {
-    fill: none;
-    stroke: #202454;
 }
 
 .basket--blue {
@@ -50,16 +41,33 @@
     stroke: #202454;
 }
 
+.button__toggle {
+    fill: none;
+    stroke: #7B94B0;
+    cursor: pointer;
+}
+
+.button__toggle:hover {
+    stroke: #202454;
+}
+
 .arr-up {
     fill: none;
     stroke: #fff;
+}
+
+.arr-up:hover {
+    stroke: #E77E42;
 }
 
 .arr-right {
     fill: none;
     stroke: #fff;
 }
-
+.arr-lef{
+    fill: none;
+    stroke: red;
+}
 .update {
     fill: #fff;
 }
@@ -72,21 +80,46 @@
     fill: #E77E42;
 }
 
-.feedback-icon {
+.feedback__icon {
     fill: #E77E42;
+}
+
+.feedback__icon:hover {
+    stroke: #000;
+}
+
+.sprite-user {
+    stroke: #202454;
+}
+
+.telephone {
+    fill: #33485D;
+}
+
+.icon-mobile {
+    fill: #33485D;
+}
+
+.star {
+    fill: #E77E42;
+    margin-right: 2px;
 }
 
 .bad-star {
     fill: #E0E0E0;
-    margin-right: 1px;
+    margin-right: 2px;
 }
-
-.sprite-star {
-    fill: #E77E42;
+.delivery{
+    fill: #E9793A;
 }
-.sprite-user {
-    stroke: #202454;
+.discount{
+    fill: none;
+    stroke: #E9793A;
 }
-.telephone{
-    fill: #33485D;
+.lapka{
+    fill: none;
+    stroke: #8D58E3;
+}
+.video{
+    stroke: #FFFFFF;
 }
