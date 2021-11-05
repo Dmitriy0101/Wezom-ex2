@@ -7,7 +7,6 @@
       <change beforePath="$PROJECT_DIR$/css/sprite.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/sprite.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/icons.svg" beforeDir="false" afterPath="$PROJECT_DIR$/icons.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,9 @@
       <workItem from="1635697552689" duration="5319000" />
       <workItem from="1635840089294" duration="17321000" />
       <workItem from="1635941369596" duration="12173000" />
-      <workItem from="1636030458968" duration="23525000" />
+      <workItem from="1636030458968" duration="24122000" />
+      <workItem from="1636104928542" duration="748000" />
+      <workItem from="1636107707207" duration="2466000" />
     </task>
     <servers />
   </component>
