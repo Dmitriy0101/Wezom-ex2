@@ -84,10 +84,6 @@
     fill: #E77E42;
 }
 
-.feedback__icon:hover {
-    stroke: #000;
-}
-
 .sprite-user {
     stroke: #202454;
 }
